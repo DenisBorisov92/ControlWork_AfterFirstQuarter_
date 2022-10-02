@@ -35,3 +35,8 @@ string[] ShowElements (string[] array)
     }
     return newArray;
 } 
+Console.Write("Введите число из скольки элементов будет состоять массив: ");
+int size = Convert.ToInt32(Console.ReadLine());
+string [] arr = CreateArray(size);
+PrintArray(arr);
+PrintArray(ShowElements(arr));
